@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  max-height: 200px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .card_title {
+    color: #000;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .card_description {
+    color: #807171;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+
+    .card_progress_completed {
+      color: #00b4b1;
+    }
+    .card_progress_inprogress {
+      color: #ff6346;
+    }
+  }
+}

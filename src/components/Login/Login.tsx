@@ -14,21 +14,16 @@ const Login = () => {
 
   return (
     <div className={styles.container}>
-      <form onSubmit={loginHandler}>
-        <input
-          className={styles.input}
-          type="text"
-          placeholder="Username"
-          name="username"
-        />
-        <input
-          className={styles.input}
-          type="password"
-          placeholder="Password"
-          name="password"
-        />
-        <button type="submit">Login</button>
-      </form>
+      <div className={styles.formContainer}>
+        <div className={styles.header}></div>
+        <form className={styles.form}>
+          <label htmlFor="username">Username:</label>
+          <input className={styles.inputField} type="text" name="username" />
+          <label htmlFor="password">Password:</label>
+          <input className={styles.inputField} type="text" name="password" />
+          <button type="submit">Login</button>
+        </form>
+      </div>
     </div>
   );
 };
